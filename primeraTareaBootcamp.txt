@@ -1,0 +1,32 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        System.out.println("PRIEMRA PARTE");
+        var result = suma( 5, 4, 6);
+        System.out.println("El resultado de la suma de los tres numeros es de: "+result);
+        
+        System.out.println("SEGUNDA PARTE");
+        Coche auto = new Coche();
+        System.out.println("El auto teniene "+ auto.numberDoors + " puertas");
+        auto.addDoors(3);
+        System.out.println("El auto ahora tiene "+ auto.numberDoors + " puertas");
+        
+        
+    }
+    
+    public static int suma(int a, int b, int c){
+            return (a + b + c);
+            
+    }
+    
+    public static class Coche {
+        public static int numberDoors = 2;
+      
+    
+        public static int addDoors(int value){
+            numberDoors += value;
+            return numberDoors;
+        }
+    }
+}
